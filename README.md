@@ -79,7 +79,7 @@ El proyecto consiste en un sitio web  destinado a proporcionar servicios de ases
 
   ### **Como nos manejamos en el proyecto:** visita nuestra wiki :books:
   
-  [Wiki Centro Nutricional](https://github.com/CodeSystem2022/integrador_CodeStyle_Centronutricional_2023.wiki.git)
+  [Wiki Centro Nutricional](https://github.com/CodeSystem2022/integrador_CodeStyle_Centronutricional_2023/wiki)
   
   
 
