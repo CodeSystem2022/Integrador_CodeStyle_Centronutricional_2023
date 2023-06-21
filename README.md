@@ -74,6 +74,12 @@ El proyecto consiste en un sitio web  destinado a proporcionar servicios de ases
               _PASSWORD= 'admin'
               _DB_PORT= '5432'
               _HOST = '127.0.0.1'
+
+-------
+
+  ### **Como nos manejamos en el proyecto:** visita nuestra wiki :books:
+  
+  [Wiki Centro Nutricional](https://github.com/CodeSystem2022/integrador_CodeStyle_Centronutricional_2023.wiki.git)
   
   
 
