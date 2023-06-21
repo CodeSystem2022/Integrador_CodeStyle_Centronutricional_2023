@@ -1,0 +1,50 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>90</x><y>330</y><w>250</w><h>240</h></coordinates><panel_attributes>&lt;&lt;conexion&gt;&gt;
+--
+ -USERNAME: String
+ -PASSWORD: String 
+ -DB_PORT: String
+ -HOST: String
+ -conexion: connection
+ -cursor: Cursor
+--
++ obtenerConexion(cls): Connection
++ obtenerCursor(cls): Cursor
+--
+Responsibilidades:
+Adminsitra la conexion a la base de datos
+
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>40</y><w>240</w><h>240</h></coordinates><panel_attributes>&lt;&lt;Paciente&gt;&gt;
+--
+- id_paciente: int
+- nombre = String
+- apellido= String
+- peso = float
+- altura =float
+- imc= float
+
+--
++__str__():String
++metodo Get/Set por atributo
+--
+Responsibilities
+Crea objetos de la entidad Paciente
+
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>40</y><w>240</w><h>240</h></coordinates><panel_attributes>&lt;&lt;PacienteDAO&gt;&gt;
+--
+- SELECCIONAR: String
+- INSERTAR: String
+- ACTUALIZAR: String
+- ELIMINAR. String
+--
++ seleccionar(cls):
++ seleccionarPaciente(cls,id_paciente):
++ insertar(cls, paciente):
++ actualizar(cls, paciente, id_paciente):
++ eliminar(cls, id_paciente):
+--
+Responsibilities
+Realiza operaciones en la base de datos
+
+bg=red
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>270</y><w>160</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>140;10;140;180;10;180</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>130</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>90;10;10;10</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>40</x><y>0</y><w>610</w><h>610</h></coordinates><panel_attributes>Centro nutricional
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
