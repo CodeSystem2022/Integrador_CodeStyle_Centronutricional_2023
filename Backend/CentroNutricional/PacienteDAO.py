@@ -12,4 +12,20 @@ class PacienteDAO:
 
     _SELECT_PACIENTE = "SELECT * FROM paciente WHERE id_paciente=%s"
     _SELECT_PACIENTES_ELIMINADOS= "SELECT * FROM pacientes_eliminados"
+
+    @classmethod
+    def seleccionar(cls):
+        with Conexion.obtenerConexion():
+            with Conexion.obtenerCursor() as cursor:
+                cursor.execute(cls._SELECT)
+                registros = cursor.fetchall()
+                pacientes = [] #creamos una lista
+                for registro in registros:
+                    id_paciente = registro[0] #id del paciente
+                    paciente = Paciente (registro[1], registro[2],
+                                         registro[3], registro[4]) #nombre, apellido, peso, altura
+                    paciente.id_paciente(id_paciente)
+                    pacientes.append(paciente)
+                return pacientes
+            
     
