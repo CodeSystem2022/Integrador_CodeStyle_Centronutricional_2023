@@ -63,3 +63,13 @@ class PacienteDAO:
                 log.debug(f'Paciente actualizado: {paciente}')
                 return cursor.rowcount
 
+    @classmethod
+    def eliminar(cls, id_paciente):
+        with Conexion.obtenerConexion():
+            with Conexion.obtenerCursor() as cursor:
+                valores = (id_paciente,)
+                cursor.execute(cls._DELETE, valores)
+                registro_eliminado = cursor.rowcount
+                log.debug(f'El registro eliminado es: {registro_eliminado}')
+                return cursor.rowcount
+
