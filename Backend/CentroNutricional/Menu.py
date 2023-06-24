@@ -1,5 +1,5 @@
 from PacienteDAO import PacienteDAO
-from Paciente import Paciente
+from paciente import Paciente
 from logger_base import log
 
 print("**************************************************************** BIENVENIDOS A NUTRICION DIGITAL ****************************************************************");
@@ -43,6 +43,17 @@ while opcion != 7:
                                 altura=altura_paciente)
             paciente_actualizado = PacienteDAO.actualizar(paciente, id_paciente)
             log.debug(f'Paciente actualizado: {paciente_actualizado}')
+
+        except Exception as e:
+            log.error(f'Ocurrió un error: {e}')
+
+    elif opcion == 3:
+        print('****Eliminar paciente**** ')
+
+        try:
+            id_paciente = int(input('Digite el id del paciente a eliminar: '))
+            paciente_eliminado = PacienteDAO.eliminar(id_paciente)
+            log.debug('Paciente eliminado')
 
         except Exception as e:
             log.error(f'Ocurrió un error: {e}')
