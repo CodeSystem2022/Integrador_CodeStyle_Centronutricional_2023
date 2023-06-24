@@ -57,4 +57,22 @@ while opcion != 7:
 
         except Exception as e:
             log.error(f'Ocurrió un error: {e}')
+    
+    #Reservado para Fernando
 
+     elif opcion ==6:
+        print('****Historial pacientes eliminados****')
+        pacientes=PacienteDAO.pacientes_eliminados()
+        for paciente in pacientes:
+            log.debug(paciente)
+
+    elif opcion==7:
+        print("Muchas gracias por visitar nutrición digital, lo esperamos nuevamente")
+        print("******* Team Developers CodeStyle *******")
+        developers = ['Dana Angellotti','Florencia Oviedo', 'Juan Pablo Ayoroa', 'Adriana Da Silva', 'Fernando Rojas', 'Ivana Germir', 'Gabriela Silva','Martin Verstraeten']
+        for developer in developers:
+            print(developer)
+        break
+
+    else:
+        print("La opción es incorrecta, digite nuevamente")
