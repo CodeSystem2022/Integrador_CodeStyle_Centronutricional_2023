@@ -30,3 +30,20 @@ while opcion != 7:
         except Exception as e:
             log.error(f'Ocurrió un error: {e}')
 
+    elif opcion == 2:
+        print('****Editar paciente**** ')
+
+        try:
+            id_paciente = int(input('Digite el id del paciente a editar: '))
+            nombre_paciente = input('Digite el nombre del paciente: ')
+            apellido_paciente = input('Digite el apellido del paciente: ')
+            peso_paciente = float(input('Digite el peso en kg del paciente: '))
+            altura_paciente = float(input('Digite la altura en mts del paciente: '))
+            paciente = Paciente(nombre=nombre_paciente, apellido=apellido_paciente, peso=peso_paciente,
+                                altura=altura_paciente)
+            paciente_actualizado = PacienteDAO.actualizar(paciente, id_paciente)
+            log.debug(f'Paciente actualizado: {paciente_actualizado}')
+
+        except Exception as e:
+            log.error(f'Ocurrió un error: {e}')
+
