@@ -40,4 +40,15 @@ class PacienteDAO:
                                     registro[3], registro[4]) #nombre, apellido, peso, altura
                 paciente.id_paciente(id_paciente)
                 return paciente
+
+    @classmethod
+    def insertar(cls, paciente):
+        with Conexion.obtenerConexion():
+            with Conexion.obtenerCursor() as cursor:
+                valores = (paciente.nombre, paciente.apellido, paciente.peso, paciente.altura, paciente.imc)
+                cursor.execute(cls._INSERT, valores)
+                id_paciente = cursor.fetchone()[0]
+                paciente.id_paciente(id_paciente)
+                log.debug(f'Paciente insertado: {paciente}')
+                return cursor.rowcount
     
