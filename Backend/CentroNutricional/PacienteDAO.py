@@ -27,5 +27,17 @@ class PacienteDAO:
                     paciente.id_paciente(id_paciente)
                     pacientes.append(paciente)
                 return pacientes
-            
+
+    @classmethod
+    def seleccionarPaciente(cls, id_paciente):
+        with Conexion.obtenerConexion():
+            with Conexion.obtenerCursor() as cursor:
+                valores=(id_paciente,)
+                cursor.execute(cls._SELECT_PACIENTE, valores)
+                registro = cursor.fetchone()
+                id_paciente = registro[0] #id del paciente
+                paciente = Paciente(registro[1], registro[2],
+                                    registro[3], registro[4]) #nombre, apellido, peso, altura
+                paciente.id_paciente(id_paciente)
+                return paciente
     
