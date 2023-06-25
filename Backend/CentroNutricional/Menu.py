@@ -1,8 +1,9 @@
 from PacienteDAO import PacienteDAO
-from paciente import Paciente
+from Paciente import Paciente
 from logger_base import log
 
-print("**************************************************************** BIENVENIDOS A NUTRICION DIGITAL ****************************************************************");
+print(
+    "**************************************************************** BIENVENIDOS A NUTRICION DIGITAL ****************************************************************");
 opcion = None
 while opcion != 7:
     print('****Menú principal**** ')
@@ -20,10 +21,11 @@ while opcion != 7:
             print('****Ingreso datos del nuevo Paciente**** ')
             nombre_paciente = input('Digite el nombre del paciente: ')
             apellido_paciente = input('Digite el apellido del paciente: ')
-            peso_paciente =  float(input('Digite el peso en kg del paciente: '))
-            altura_paciente =  float(input('Digite la altura en mts del paciente: '))
+            peso_paciente = float(input('Digite el peso en kg del paciente: '))
+            altura_paciente = float(input('Digite la altura en mts del paciente: '))
 
-            paciente = Paciente(nombre=nombre_paciente,apellido=apellido_paciente,peso=peso_paciente,altura=altura_paciente)
+            paciente = Paciente(nombre=nombre_paciente, apellido=apellido_paciente, peso=peso_paciente,
+                                altura=altura_paciente)
             paciente_insertado = PacienteDAO.insertar(paciente)
             log.debug(f'Paciente insertado: {paciente_insertado}')
 
@@ -32,7 +34,6 @@ while opcion != 7:
 
     elif opcion == 2:
         print('****Editar paciente**** ')
-
         try:
             id_paciente = int(input('Digite el id del paciente a editar: '))
             nombre_paciente = input('Digite el nombre del paciente: ')
@@ -49,7 +50,6 @@ while opcion != 7:
 
     elif opcion == 3:
         print('****Eliminar paciente**** ')
-
         try:
             id_paciente = int(input('Digite el id del paciente a eliminar: '))
             paciente_eliminado = PacienteDAO.eliminar(id_paciente)
@@ -58,34 +58,42 @@ while opcion != 7:
         except Exception as e:
             log.error(f'Ocurrió un error: {e}')
 
-     elif opcion == 4:
+    elif opcion == 4:
         print('****Buscar paciente****')
         try:
             id_paciente = int(input('Digite el id del paciente a buscar: '))
             paciente_buscado = PacienteDAO.seleccionarPaciente(id_paciente)
             log.debug(f'Paciente encontrado: {paciente_buscado}')
 
-        excep Exception as e:
+        except Exception as e:
             log.error(f'Ocurrió un error: {e}')
 
-    elif opcion ==5:
-     print('****Listado de paciente****')
-     pacientes = PacienteDAO.seleccionar()
-     for paciente in pacientes:
-         log.debug(paciente)            
-    
-    #Reservado para Fernando
+    elif opcion == 5:
+        print('****Listado de paciente****')
+        try:
+            pacientes = PacienteDAO.seleccionar()
+            for paciente in pacientes:
+                log.debug(paciente)
 
-     elif opcion ==6:
-        print('****Historial pacientes eliminados****')
-        pacientes=PacienteDAO.pacientes_eliminados()
-        for paciente in pacientes:
-            log.debug(paciente)
+        except Exception as e:
+            log.error(f'Ocurrió un error: {e}')
 
-    elif opcion==7:
+    elif opcion == 6:
+        try:
+            print('****Historial pacientes eliminados****')
+            pacientes = PacienteDAO.pacientes_eliminados()
+            for paciente in pacientes:
+                log.debug(paciente)
+
+        except Exception as e:
+            log.error(f'Ocurrió un error: {e}')
+
+    elif opcion == 7:
         print("Muchas gracias por visitar nutrición digital, lo esperamos nuevamente")
         print("******* Team Developers CodeStyle *******")
-        developers = ['Dana Angellotti','Florencia Oviedo', 'Juan Pablo Ayoroa', 'Adriana Da Silva', 'Fernando Rojas', 'Ivana Germir', 'Gabriela Silva','Martin Verstraeten']
+        developers = ['Dana Angellotti', 'Florencia Oviedo', 'Juan Pablo Ayoroa', 'Adriana Da Silva', 'Fernando Rojas',
+                      'Ivana Germir', 'Gabriela Silva', 'Martin Verstraeten']
+
         for developer in developers:
             print(developer)
         break

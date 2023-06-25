@@ -1,0 +1,159 @@
+01:01:51 PM:ERROR [Conexion.py:27] Ocurrió un error: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "postrgres"
+
+01:23:17 PM:ERROR [Conexion.py:27] Ocurrió un error: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "postrgres"
+
+01:23:59 PM:DEBUG [Conexion.py:24] Conexión exitosa <connection object at 0x000001F7CD3F2790; dsn: 'user=postgres password=xxx dbname=centronutricional host=127.0.0.1 port=5432', closed: 0>
+01:23:59 PM:DEBUG [Conexion.py:37] Se abrió correctamente el cursor: <cursor object at 0x000001F7CF844120; closed: 0>
+01:23:59 PM:ERROR [Menu.py:33] Ocurrió un error: 'Paciente' object has no attribute 'apellido'
+01:26:52 PM:DEBUG [Conexion.py:24] Conexión exitosa <connection object at 0x00000261AE2B2790; dsn: 'user=postgres password=xxx dbname=centronutricional host=127.0.0.1 port=5432', closed: 0>
+01:26:52 PM:DEBUG [Conexion.py:37] Se abrió correctamente el cursor: <cursor object at 0x00000261B03B0120; closed: 0>
+01:26:52 PM:DEBUG [PacienteDAO.py:54] Paciente insertado: 
+        Id Paciente:16
+        Nombre:Leonel
+        Apellido:Messi
+        Peso:70.0
+        Altura:1.66
+        IMC: 25.4
+    
+    
+01:26:52 PM:DEBUG [Menu.py:30] Paciente insertado: 1
+01:28:44 PM:DEBUG [PacienteDAO.py:65] Paciente actualizado: 
+        Id Paciente:16
+        Nombre:Leo
+        Apellido:Messi
+        Peso:80.0
+        Altura:1.7
+        IMC: 27.68
+    
+    
+01:28:44 PM:DEBUG [Menu.py:46] Paciente actualizado: 1
+01:29:08 PM:DEBUG [PacienteDAO.py:75] El registro eliminado es: 0
+01:29:08 PM:DEBUG [Menu.py:56] Paciente eliminado
+01:29:57 PM:DEBUG [Menu.py:76] 
+        Id Paciente:2
+        Nombre:Florencia
+        Apellido:Oviedo
+        Peso:48.0
+        Altura:1.57
+        IMC: 19.47
+    
+    
+01:29:57 PM:DEBUG [Menu.py:76] 
+        Id Paciente:3
+        Nombre:Rodrigo
+        Apellido:Campo
+        Peso:67.0
+        Altura:1.89
+        IMC: 18.76
+    
+    
+01:29:57 PM:DEBUG [Menu.py:76] 
+        Id Paciente:10
+        Nombre:Sergio
+        Apellido:Rammus
+        Peso:67.0
+        Altura:1.89
+        IMC: 18.76
+    
+    
+01:29:57 PM:DEBUG [Menu.py:76] 
+        Id Paciente:12
+        Nombre:Juan Pa
+        Apellido:Ayoroa
+        Peso:56.0
+        Altura:1.64
+        IMC: 20.82
+    
+    
+01:29:57 PM:DEBUG [Menu.py:76] 
+        Id Paciente:16
+        Nombre:Leo
+        Apellido:Messi
+        Peso:80.0
+        Altura:1.7
+        IMC: 27.68
+    
+    
+01:30:55 PM:DEBUG [PacienteDAO.py:75] El registro eliminado es: 1
+01:30:55 PM:DEBUG [Menu.py:56] Paciente eliminado
+01:31:34 PM:DEBUG [Menu.py:66] Paciente encontrado: 
+        Id Paciente:3
+        Nombre:Rodrigo
+        Apellido:Campo
+        Peso:67.0
+        Altura:1.89
+        IMC: 18.76
+    
+    
+01:31:53 PM:DEBUG [Menu.py:76] 
+        Id Paciente:2
+        Nombre:Florencia
+        Apellido:Oviedo
+        Peso:48.0
+        Altura:1.57
+        IMC: 19.47
+    
+    
+01:31:53 PM:DEBUG [Menu.py:76] 
+        Id Paciente:3
+        Nombre:Rodrigo
+        Apellido:Campo
+        Peso:67.0
+        Altura:1.89
+        IMC: 18.76
+    
+    
+01:31:53 PM:DEBUG [Menu.py:76] 
+        Id Paciente:10
+        Nombre:Sergio
+        Apellido:Rammus
+        Peso:67.0
+        Altura:1.89
+        IMC: 18.76
+    
+    
+01:31:53 PM:DEBUG [Menu.py:76] 
+        Id Paciente:12
+        Nombre:Juan Pa
+        Apellido:Ayoroa
+        Peso:56.0
+        Altura:1.64
+        IMC: 20.82
+    
+    
+01:32:07 PM:DEBUG [Menu.py:86] 
+        Id Paciente:14
+        Nombre:Alberto
+        Apellido:Fernandez
+        Peso:80.0
+        Altura:1.78
+        IMC: 25.25
+    
+    
+01:32:07 PM:DEBUG [Menu.py:86] 
+        Id Paciente:15
+        Nombre:Cristina
+        Apellido:Fernandez
+        Peso:60.0
+        Altura:1.72
+        IMC: 20.28
+    
+    
+01:32:07 PM:DEBUG [Menu.py:86] 
+        Id Paciente:11
+        Nombre:Antonio
+        Apellido:Rios
+        Peso:67.0
+        Altura:1.79
+        IMC: 20.91
+    
+    
+01:32:07 PM:DEBUG [Menu.py:86] 
+        Id Paciente:16
+        Nombre:Leo
+        Apellido:Messi
+        Peso:80.0
+        Altura:1.7
+        IMC: 27.68
+    
+    
