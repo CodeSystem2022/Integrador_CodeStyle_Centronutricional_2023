@@ -5,7 +5,7 @@ import sys
 class Conexion:
     _DATABASE = 'centronutricional'
     _USERNAME = 'postgres'
-    _PASSWORD = 'admin'
+    _PASSWORD = '1234'
     _DB_PORT = '5432'
     _HOST = '127.0.0.1'
     _conexion = None

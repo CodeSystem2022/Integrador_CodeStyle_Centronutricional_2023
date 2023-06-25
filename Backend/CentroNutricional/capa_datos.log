@@ -157,3 +157,117 @@
         IMC: 27.68
     
     
+03:05:41 PM:DEBUG [Conexion.py:24] Conexión exitosa <connection object at 0x0000027577862790; dsn: 'user=postgres password=xxx dbname=centronutricional host=127.0.0.1 port=5432', closed: 0>
+03:05:41 PM:DEBUG [Conexion.py:37] Se abrió correctamente el cursor: <cursor object at 0x0000027579924120; closed: 0>
+03:05:41 PM:DEBUG [PacienteDAO.py:54] Paciente insertado: 
+        Id Paciente:17
+        Nombre:Nadia
+        Apellido:Lopez
+        Peso:60.0
+        Altura:1.7
+        IMC: 20.76
+    
+    
+03:05:41 PM:DEBUG [Menu.py:30] Paciente insertado: 1
+03:06:38 PM:DEBUG [PacienteDAO.py:65] Paciente actualizado: 
+        Id Paciente:17
+        Nombre:Natalia
+        Apellido:Lopez
+        Peso:69.0
+        Altura:1.7
+        IMC: 23.88
+    
+    
+03:06:38 PM:DEBUG [Menu.py:46] Paciente actualizado: 1
+03:07:19 PM:DEBUG [PacienteDAO.py:75] El registro eliminado es: 1
+03:07:19 PM:DEBUG [Menu.py:56] Paciente eliminado
+03:08:02 PM:DEBUG [Menu.py:66] Paciente encontrado: 
+        Id Paciente:12
+        Nombre:Juan Pa
+        Apellido:Ayoroa
+        Peso:56.0
+        Altura:1.64
+        IMC: 20.82
+    
+    
+03:08:16 PM:DEBUG [Menu.py:76] 
+        Id Paciente:2
+        Nombre:Florencia
+        Apellido:Oviedo
+        Peso:48.0
+        Altura:1.57
+        IMC: 19.47
+    
+    
+03:08:16 PM:DEBUG [Menu.py:76] 
+        Id Paciente:3
+        Nombre:Rodrigo
+        Apellido:Campo
+        Peso:67.0
+        Altura:1.89
+        IMC: 18.76
+    
+    
+03:08:16 PM:DEBUG [Menu.py:76] 
+        Id Paciente:10
+        Nombre:Sergio
+        Apellido:Rammus
+        Peso:67.0
+        Altura:1.89
+        IMC: 18.76
+    
+    
+03:08:16 PM:DEBUG [Menu.py:76] 
+        Id Paciente:12
+        Nombre:Juan Pa
+        Apellido:Ayoroa
+        Peso:56.0
+        Altura:1.64
+        IMC: 20.82
+    
+    
+03:08:33 PM:DEBUG [Menu.py:86] 
+        Id Paciente:14
+        Nombre:Alberto
+        Apellido:Fernandez
+        Peso:80.0
+        Altura:1.78
+        IMC: 25.25
+    
+    
+03:08:33 PM:DEBUG [Menu.py:86] 
+        Id Paciente:15
+        Nombre:Cristina
+        Apellido:Fernandez
+        Peso:60.0
+        Altura:1.72
+        IMC: 20.28
+    
+    
+03:08:33 PM:DEBUG [Menu.py:86] 
+        Id Paciente:11
+        Nombre:Antonio
+        Apellido:Rios
+        Peso:67.0
+        Altura:1.79
+        IMC: 20.91
+    
+    
+03:08:33 PM:DEBUG [Menu.py:86] 
+        Id Paciente:16
+        Nombre:Leo
+        Apellido:Messi
+        Peso:80.0
+        Altura:1.7
+        IMC: 27.68
+    
+    
+03:08:33 PM:DEBUG [Menu.py:86] 
+        Id Paciente:17
+        Nombre:Natalia
+        Apellido:Lopez
+        Peso:69.0
+        Altura:1.7
+        IMC: 23.88
+    
+    

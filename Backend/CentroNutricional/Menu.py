@@ -12,7 +12,7 @@ while opcion != 7:
     print('3. Eliminar paciente')
     print('4. Buscar paciente')
     print('5. Listado de pacientes')
-    print('6. Listado de pacienes eliminados')
+    print('6. Listado de pacientes eliminados')
     print('7. Salir')
     opcion = int(input('Digite una opción de menú(1-7): '))
 
