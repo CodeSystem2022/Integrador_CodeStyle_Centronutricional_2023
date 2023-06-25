@@ -57,6 +57,22 @@ while opcion != 7:
 
         except Exception as e:
             log.error(f'Ocurrió un error: {e}')
+
+     elif opcion == 4:
+        print('****Buscar paciente****')
+        try:
+            id_paciente = int(input('Digite el id del paciente a buscar: '))
+            paciente_buscado = PacienteDAO.seleccionarPaciente(id_paciente)
+            log.debug(f'Paciente encontrado: {paciente_buscado}')
+
+        excep Exception as e:
+            log.error(f'Ocurrió un error: {e}')
+
+    elif opcion ==5:
+     print('****Listado de paciente****')
+     pacientes = PacienteDAO.seleccionar()
+     for paciente in pacientes:
+         log.debug(paciente)            
     
     #Reservado para Fernando
 
