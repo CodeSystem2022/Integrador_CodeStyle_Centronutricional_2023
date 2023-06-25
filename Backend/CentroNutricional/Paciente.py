@@ -36,7 +36,15 @@ class Paciente:
     @nombre.setter
     def nombre(self, nombre):
         self._nombre = nombre
-        
+
+    @property
+    def apellido(self):
+        return self._apellido
+
+    @apellido.setter
+    def apellido(self, apellido):
+        self._apellido = apellido
+
     @property
     def peso(self):
         return self._peso
